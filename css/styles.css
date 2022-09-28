@@ -1,0 +1,144 @@
+body {
+  background-color: #f2ebe3;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Fraunces', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.frame {
+  height: 470px;
+  width: 590px;
+  min-height: 470px;
+  min-width: 590px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.product-image {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.product-description-frame {
+  display: inline-block;
+  width: 50%;
+  padding: 1.8rem;
+  box-sizing: border-box;
+  position: absolute;
+  height: 100%;
+}
+
+.product-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: hsl(228, 12%, 48%);
+}
+
+.product-description {
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+}
+
+.discounted-product-price {
+  font-family: 'Fraunces', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: hsl(158, 36%, 37%);
+}
+
+.real-product-price {
+  text-decoration: line-through;
+  margin-left: 10%;
+  display: inline-block;
+  transform: translate(0, -25%);
+  color: hsl(228, 12%, 48%);
+}
+
+.product-prices {
+  margin: 30px 0;
+}
+
+.btn {
+  background: #3c8067;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 15px 0;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #1c232b;
+  text-decoration: none;
+}
+
+.add-to-cart {
+  display: block;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  font-weight: 600;
+}
+
+.add-to-cart img {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .frame {
+    height: 630px;
+    width: 332px;
+    min-height: 600px;
+    min-width: 332px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+  }
+
+  .product-image {
+    width: 100%;
+    height: 40%;
+    display: inline-block;
+  }
+
+  .product-description-frame {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+
+    /*display: inline-block;*/
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    position: absolute;
+  }
+
+  .product-prices {
+    margin: 10px 0;
+  }
+}
